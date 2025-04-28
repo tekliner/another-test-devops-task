@@ -11,8 +11,6 @@ services:
       - ./manifests:/manifests:Z,ro
     ports:
       - "6443:6443" # Kubernetes API Server
-      - "80:80"     # Ingress controller port 80
-      - "443:443"   # Ingress controller port 443
 
   k3s-agent:
     image: rancher/k3s:v1.32.3-k3s1

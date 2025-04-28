@@ -1,5 +1,3 @@
-FROM rancher/k3s:v1.32.3-k3s1
+FROM python:3.13
 
-EXPOSE 6443 80 443
-
-ENTRYPOINT ["k3s", "server"]
+RUN pip install psycopg2==2.9.10
