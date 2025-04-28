@@ -8,25 +8,19 @@ The application is a python job hosted on Kubernetes. You need to set up the Kub
 
 ## How to Run
 
-1. **Build the Docker images:**
-
-   ```bash
-   docker compose build
-   ```
-
-2. **Start the K3S containers:**
+1. **Start the K3S containers:**
 
    ```bash
    docker compose up -d
    ```
 
-3. **Access the running container:**
+2. **Access the running container:**
 
    ```bash
    docker compose exec k3s-server sh
    ```
 
-4. **Apply the Kubernetes manifests using Kustomize inside the container:**
+3. **Apply the Kubernetes manifests using Kustomize inside the container:**
 
    ```bash
    kubectl apply -k ./manifests/
