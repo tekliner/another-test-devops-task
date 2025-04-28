@@ -1,7 +1,7 @@
 services:
   k3s-server:
     image: rancher/k3s:v1.32.3-k3s1
-    command: server
+    command: server --selinux
     privileged: true
     environment:
       - K3S_KUBECONFIG_OUTPUT=/output/kubeconfig.yaml
