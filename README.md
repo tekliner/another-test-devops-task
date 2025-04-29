@@ -31,7 +31,7 @@ The application is a python job hosted on Kubernetes. You need to set up the Kub
 ## How to Test
 
 To verify that the task is finished correctly, you need to be sure that the python job is writing logs to the Postgres database
-and this information is still available after Postgres pod restart.
+and this information is still available after Postgres pod deletion.
 You can execute into PG pod and check the logs table in testdb database.
 
 ### Tips
